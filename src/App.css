@@ -1,0 +1,156 @@
+:root {
+  --blue: #4facfe;
+  --green-light: #00f2fe;
+  --white: #ffff;
+  --grey: #e0dddda3;
+  --red: red;
+}
+
+.todo-app {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    var(--blue) 0%,
+    var(--green-light) 100%
+  );
+}
+
+.todo-box {
+  width: 50%;
+  min-height: 500px;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 13px;
+}
+
+.title {
+  margin: 0;
+}
+
+.create-box {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-box input {
+  border: none;
+  background-color: var(--grey);
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.create-box input:focus-visible {
+  outline: none;
+}
+
+.btn-add-task {
+  border: none;
+  padding: 16px 25px;
+  font-size: 20px;
+  background: linear-gradient(
+    to left,
+    var(--blue) 0%,
+    var(--green-light) 100%
+  );
+  color: var(--white);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.todo-list {
+  margin: 15px 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--blue) 0%,
+    var(--green-light) 100%
+  );
+  color: var(--white);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.todo-item span {
+  font-size: 20px;
+}
+
+.todo-name {
+  display: flex;
+  align-items: center;
+}
+
+.todo-check {
+  border: none;
+  outline: none;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--red);
+  margin-right: 10px;
+}
+
+
+.todo-check:checked {
+  outline: none;
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.todo-actions .icon {
+  cursor: pointer;
+  width: 20px;
+}
+
+.edit-icon {
+  color: rgb(29, 7, 119);
+}
+
+.trash-icon {
+  color: rgb(231, 11, 11);
+}
+
+.done {
+  text-decoration: line-through;
+  text-decoration-color: var(--red);
+}
+
+.error {
+  color: var(--red);
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.empty-list {
+  text-align: center;
+  color: var(--blue);
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.copyright {
+  padding: 1rem;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.copyright a{
+  color: var(--white);
+  font-style: italic;
+}
